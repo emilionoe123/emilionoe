@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coca-Cola | Página oficial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header id="navbar" class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-text">Coca<b>Cola</b></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container hero-content">
+      <h1>Destapa la <span>felicidad</span></h1>
+      <p>La bebida más icónica del mundo, desde 1886, refrescando vidas y creando momentos inolvidables.</p>
+      <a href="#productos" class="btn btn-primary">Explorar productos</a>
+    </div>
+  </section>
+
+  <section id="historia" class="section">
+    <div class="container">
+      <h2 class="section-title">Nuestra historia</h2>
+      <div class="history-grid">
+        <div class="history-item">
+          <h3>1886</h3>
+          <p>El Dr. John Stith Pemberton crea la fórmula original en Atlanta, Georgia.</p>
+        </div>
+        <div class="history-item">
+          <h3>1915</h3>
+          <p>Nace la icónica botella contorneada, reconocida en todo el mundo.</p>
+        </div>
+        <div class="history-item">
+          <h3>1925</h3>
+          <p>"Coca-Cola" se convierte en la primera marca en llegar a todos los continentes.</p>
+        </div>
+        <div class="history-item">
+          <h3>Hoy</h3>
+          <p>Más de 200 países, 1.9 mil millones de bebidas servidas cada día.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="productos" class="section products">
+    <div class="container">
+      <h2 class="section-title">Nuestros productos</h2>
+      <div class="products-grid">
+        <div class="product-card" data-name="Coca-Cola Clásica">
+          <div class="bottle bottle-red"></div>
+          <h3>Coca-Cola Clásica</h3>
+          <p>El sabor original e inconfundible.</p>
+          <button class="btn btn-outline add-btn">Agregar al carrito</button>
+        </div>
+        <div class="product-card" data-name="Coca-Cola Zero">
+          <div class="bottle bottle-black"></div>
+          <h3>Coca-Cola Zero Azúcar</h3>
+          <p>Todo el sabor, cero azúcar.</p>
+          <button class="btn btn-outline add-btn">Agregar al carrito</button>
+        </div>
+        <div class="product-card" data-name="Coca-Cola Light">
+          <div class="bottle bottle-silver"></div>
+          <h3>Coca-Cola Light</h3>
+          <p>El clásico sabor light.</p>
+          <button class="btn btn-outline add-btn">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="cart" id="cart">
+        <h3>🛒 Tu carrito</h3>
+        <ul id="cartItems"></ul>
+        <p class="cart-total">Total: <span id="cartTotal">0</span> productos</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Contáctanos</h2>
+      <form id="contactForm">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <p id="formMsg" class="form-msg"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Coca-Cola. Todos los derechos reservados. Página de ejemplo con fines educativos.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
